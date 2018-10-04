@@ -29,6 +29,7 @@ public class BankAccount {
     public BankAccount(final String name, final BankAccountType accountCategory) {
         ownerName = name;
         accountType = accountCategory;
+        Bank.totalAccounts++;
     }
 
     public int getAccountNumber() {
